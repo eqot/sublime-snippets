@@ -12,11 +12,11 @@ define([
 		el: \$('#view'),
 
 		initialize: function () {
-			console.log('${1:My}View');
+			console.log('$1View');
 		}
 	});
 
-	return ${1:My}View;
+	return $1View;
 });
 
 ]]></content>

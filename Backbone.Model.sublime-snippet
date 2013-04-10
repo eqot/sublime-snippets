@@ -13,11 +13,11 @@ define([
 		},
 
 		initialize: function () {
-			console.log('${1:Model}');
+			console.log('$1');
 		}
 	});
 
-	return ${1:Model};
+	return $1;
 });
 
 ]]></content>
