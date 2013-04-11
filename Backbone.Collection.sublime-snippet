@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+/*global define */
+define(['backbone', 'models/${1:model}'], function (Backbone, ${2:Model}) {
+	'use strict';
+
+	var $2s = Backbone.Collection.extend({
+		model: $2,
+		url: '/api/$1'
+	});
+
+	return $2s;
+});
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>bcollection</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
