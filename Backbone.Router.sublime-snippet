@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+/*global define */
+define([
+    'backbone',
+    'views/top'
+], function (Backbone, TopView) {
+    'use strict';
+
+    var Router = Backbone.Router.extend({
+        routes: {
+            '': 'topView'
+        },
+
+        initialize: function () {
+            console.log('Router');
+            Backbone.history.start();
+        },
+
+        topView: function () {
+            console.log('topView');
+
+            new TopView();
+        }
+    });
+
+    return Router;
+});
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>brouter</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
